@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.image1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pexels-photo-248515.png");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+
+/* Header/Logo Title */
+.header {
+  padding: 40px;
+  text-align: center;
+  background: whitesmoke;
+  color: black;
+  font-size: 20px;
+}
+
+.newspaper {
+  column-count: 2;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: black;
+}
+
+.flex-container .box {
+  background-color: #f1f1f1;
+  width: 33%;
+  margin: 10px;
+  text-align: center;
+  line-height: normal;
+  font-size: 20px;
+  
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: black;
+  color: white;
+}
+
+.left,
+.right {
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a:link, a:visited {
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: white;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<div class="image1">
+  <div class="text">
+    <h1 style="font-size:50px">Welcome to Acme Web Solutions</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci eum error earum soluta voluptatum
+      nisi laboriosam eos saepe asperiores dolorum.</p>
+      <a href="#Section2.asp">Read more</a>
+    
+  </div>
+</div>
+
+<id="Section1"></id>
+
+<div class="header">
+  <h1>Web & Application Development</h1>
+  <div class="newspaper">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint eligendi possimus? Unde
+    officiis magnam laborum ipsa distinctio odio, vero dolores dicta aliquam aperiam repellendus.
+    Perferendis officiis deserunt velit voluptas nobis sequi
+    animi totam, accusantium, ex eius quia, natus quo?
+</div>
+</div>
+
+<id="Section2"></id>
+<div class="flex-container">
+  <div class="box">
+  <img src="pexels-photo-574077-min.jpeg" alt=" " style="width:100%">
+  <h3>Web Development</h3>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et
+  quasi velit voluptatum cum maiores exercitationem.</div>
+  
+  <div class="box">
+  <img src="pexels-photo-261628.jpeg" alt=" " style="width:100%">
+  <h3>Mobile Applications.</h3>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et
+    quasi velit voluptatum cum maiores exercitationem.</div>
+  
+  <div class="box">
+  <img src="pexels-photo-265087.jpeg" alt=" " style="width:100%">
+  <h3>Tech Marketing</h3>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et
+    quasi velit voluptatum cum maiores exercitationem.</div>
+  </div>
+
+  <id="Section3"></id>
+  <div class="header">
+    <h1>We handle all of your digital needs</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam rerum vel earum error fugiat cupiditate, dolore eius! Minus, explicabo.</p>
+  </div>
+
+  <id="Section4"></id>
+<div class="row">
+  <div class="column" style="background-color: blue; color: white;text-align: center;">
+    <h2>Contact Us</h2>  
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, suscipit. Rerum ducimus a quod, ut et voluptas obcaecati unde fuga.</p>
+    <p>contact@acmewebsolutions.test</p>
+  </div>
+  <div class="column" style="background-color: gray; color: white;text-align: center;">
+    <h2>About Our Company</h2> 
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum porro deserunt, deleniti, quae facere repudiandae, officiis est exercitationem nobis iusto doloremque! Soluta excepturi in aut suscipit amet temporibus quo?</p>
+      </div>
+  </div>
+
+       <footer>
+      <div>Acme Web Solutions</div>
+      <div> Project <a her = "http://traversymedia.com"> By Traversy Media</a></div>
+      </footer>
+  </div>
+
+</body>
+</html>
+
